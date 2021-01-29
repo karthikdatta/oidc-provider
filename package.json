@@ -1,0 +1,23 @@
+{
+  "name": "oidc-provider-poc",
+  "version": "1.0.0",
+  "description": "A working oidc-provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikdatta/oidc-provider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikdatta/oidc-provider/issues"
+  },
+  "homepage": "https://github.com/karthikdatta/oidc-provider#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "oidc-provider": "^6.31.0"
+  }
+}
