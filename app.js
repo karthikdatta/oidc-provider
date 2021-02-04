@@ -4,12 +4,8 @@ const helmet = require("helmet");
 const https = require("https");
 const fs = require("fs");
 
-var key = fs.readFileSync(
-  "D:/test-oidc-provider/oidc-provider-poc/cert/selfsigned.key"
-);
-var cert = fs.readFileSync(
-  "D:/test-oidc-provider/oidc-provider-poc/cert/selfsigned.crt"
-);
+var key = fs.readFileSync("cert/selfsigned.key");
+var cert = fs.readFileSync("cert/selfsigned.crt");
 var credentials = {
   key: key,
   cert: cert,
