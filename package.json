@@ -18,6 +18,7 @@
   "homepage": "https://github.com/karthikdatta/oidc-provider#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "helmet": "^4.4.1",
     "oidc-provider": "^6.31.0"
   }
 }
