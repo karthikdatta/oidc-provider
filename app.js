@@ -88,7 +88,7 @@ const configuration = {
 };
 
 //Creating oidc provider instance
-const oidc = new Provider("http://localhost:3000", configuration);
+const oidc = new Provider("http://localhost", configuration);
 
 app.enable("trust proxy");
 Provider.proxy = true;
@@ -102,8 +102,8 @@ app.use(oidc.callback);
 // });
 var httpsServer = https.createServer(credentials, app);
 
-httpsServer.listen(3000, () => {
+httpsServer.listen(443, () => {
   console.log(
-    `application is listening on port 3000, check https://localhost:3000/.well-known/openid-configuration`
+    `application is listening on port 443, check https://localhost/.well-known/openid-configuration`
   );
 });
